@@ -234,13 +234,13 @@ def DeltaCost(K,new_k_edge,new_graph_edge,max_flow):
 	print('Removed edge u,v : ',u,v,' from R')
 
 	# If there was flow on uv
-	if new_k_edge_value > 0:
+#	if new_k_edge_value > 0:
 		# If vu is not an original edge
-		if R[v][u]['capacity'] == 0:
-			R.remove_edge(v,u)
+#		if R[v][u]['capacity'] == 0:
+#			R.remove_edge(v,u)
 		# If vu is an original edge
-		if R[v][u]['capacity'] > 0:
-			R[v][u]['res_cap'] = R[v][u]['res_cap'] - new_k_edge_value
+#		if R[v][u]['capacity'] > 0:
+#			R[v][u]['res_cap'] = R[v][u]['res_cap'] - new_k_edge_value
 
 	print('\n')	
 	print('R :')
