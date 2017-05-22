@@ -373,6 +373,7 @@ def DeltaCost(K,new_k_edge,new_graph_edge,max_flow):
 	# Add new_grah_edge to R
 	#
 	u,v,c,t = new_graph_edge
+	print('new G edge : ',u,v)
 	R.add_edge(u,v)
 	#R.add_edge(v,u)
 	R[u][v]['capacity'] = c
