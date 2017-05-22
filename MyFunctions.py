@@ -251,13 +251,13 @@ def DeltaCost(K,new_k_edge,new_graph_edge,max_flow):
 		# If vu is an original edge
 #		if R[v][u]['capacity'] > 0:
 #			R[v][u]['res_cap'] = R[v][u]['res_cap'] - new_k_edge_value
-	'''
+	
 	print('\n')	
 	print('R :')
 	for x,y in R.edges():
 		print(x,y,R[x][y])
 	print('\n')
-'''
+
 	delta_start_time = time.time()
 	
 

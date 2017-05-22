@@ -60,7 +60,11 @@ def main(path,time_limit,constr_heuristic,flip_fct,step_fct):
 	# Read network from file
 	G = nx.read_gexf(path)
 	#print(' G loaded')
-
+	print('\n')	
+	print('G :')
+	for x,y in G.edges():
+		print(x,y,G[x][y])
+	print('\n')
 	# Find n and m
 	n = G.number_of_nodes()
 	m = G.number_of_edges()
