@@ -228,8 +228,10 @@ def DeltaCost(K,new_k_edge,new_graph_edge,max_flow):
 	print('new k edge value : ',new_k_edge_value)
 
 
-	print('uv :',u,v,R[u][v])
-	print('vu :',v,u,R[v][u])
+	if (u,v) in R.edges():
+		print('uv :',u,v,R[u][v])
+	if (v,u) in R.edges():
+		print('vu :',v,u,R[v][u])
 	
 	#
 	# Remove new_k_edge from R
