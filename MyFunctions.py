@@ -219,8 +219,8 @@ def SendFlow(K,u,v,init_max):
 #
 
 def DeltaCost(K,new_k_edge,new_graph_edge,max_flow):
-	#print('Delta cost calculation')
-	#print('\n')
+	print('Delta cost calculation')
+	print('\n')
 
 	R = copy.deepcopy(K)
 	u,v,c,t = new_k_edge
@@ -304,6 +304,7 @@ def DeltaCost(K,new_k_edge,new_graph_edge,max_flow):
 
 		# As long as it is possible to find new paths 
 		# and all flow (that used to be sent on uv) has not been sent yet
+		print('search for new routes \n')
 		while uv_route == True and delta < new_k_edge_value:
 			# Search for alternative route from u to v (uv = new_k_edge) in R
 			u,v,c,t = new_k_edge
@@ -324,6 +325,8 @@ def DeltaCost(K,new_k_edge,new_graph_edge,max_flow):
 		# If there remains uv-flow (of value alpha) 
 		# send this back from u to s and from t to v in R
 		alpha = new_k_edge_value - delta
+		print('no more rutes available, send back ', alpha, ' to s and t')
+
 		print('\n')
 		print('alpha : ', alpha)
 		alpha_sent_s = 0
@@ -334,6 +337,7 @@ def DeltaCost(K,new_k_edge,new_graph_edge,max_flow):
 				alpha_sent_s = alpha
 				print('u = s')
 			while alpha_sent_s < alpha:
+				print('Finding route from s to u')
 				us_route, R = FindRoute(R,u,'s')
 				print('us_route : ', us_route)
 				print('\n')
@@ -342,6 +346,7 @@ def DeltaCost(K,new_k_edge,new_graph_edge,max_flow):
 					alpha_sent_s = alpha_sent_s + flow_value
 					print('alpha_sent to s : ', alpha_sent_s)
 					print('\n')
+				print('alpha: ', alpha, ', alpha_sent_s: ', alpha_sent_s)
 			# From t to v
 			if v == 't':
 				alpha_sent_t = alpha
@@ -354,6 +359,8 @@ def DeltaCost(K,new_k_edge,new_graph_edge,max_flow):
 					R, flow_value = SendFlow(R,'t',v,(alpha-alpha_sent_t))
 					alpha_sent_t = alpha_sent_t + flow_value
 					print('alpha_sent from t : ', alpha_sent_t)
+				print('alpha: ', alpha, ', alpha_sent_t: ', alpha_sent_t)
+	
 	print('\n')
 	
 	delta_time = time.time() - delta_start_time
