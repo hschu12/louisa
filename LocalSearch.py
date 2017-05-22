@@ -168,7 +168,7 @@ def main(path,time_limit,constr_heuristic,flip_fct,step_fct):
 
 
 			# Print k set	
-			#print("k set : ", k_set)
+			print("k set : ", k_set)
 
 			# Find residual network
 			R = nx.flow.edmonds_karp(G, 's', 't')
