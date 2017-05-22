@@ -244,6 +244,12 @@ def DeltaCost(K,new_k_edge,new_graph_edge,max_flow):
 	if (v,u) in R.edges():
 		print('vu :',v,u,R[v][u])
 
+	if new_k_edge_value > 0:
+		if R[v][u]['flow'] > 0:
+			R[v][u]['flow'] = R[v][u]['flow'] - R[u][v]['flow']
+			R[v][u]['res_cap'] = R[v][u]['capacity'] - R[v][u]['flow']
+			R[v][u]['tabu'] = t	
+
 	if new_k_edge_value < 0:
 		if R[v][u]['flow'] > 0:
 			R.add_edge(u,v)
