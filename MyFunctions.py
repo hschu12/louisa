@@ -254,9 +254,9 @@ def DeltaCost(K,new_k_edge,new_graph_edge,max_flow):
 	for x,y in R.edges():
 		print(x,y,R[x][y])
 	print('\n')
-
+'''
 	delta_start_time = time.time()
-	'''
+	
 
 
 	'''
