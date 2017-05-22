@@ -337,6 +337,11 @@ def main(path,time_limit,constr_heuristic,flip_fct,step_fct):
 				#
 				# DELTA COST CALCULATION
 				#
+				print('\n')	
+				print('R at entry :')
+				for x,y in R.edges():
+					print(x,y,R[x][y])
+				print('\n')
 				new_R,new_max_flow,delta_cost,delta_time = mf.DeltaCost(R,new_k_edge,new_graph_edge,max_flow)
 				# Updating step counter
 				step = step+1
