@@ -176,8 +176,8 @@ def main(path,time_limit,constr_heuristic,flip_fct,step_fct):
 			# Find New Max flow value
 			first_int_max_flow = R.graph['flow_value']
 			max_flow = first_int_max_flow
-			#print('New Max Flow value : ',max_flow)
-			#print('\n')
+			print('New Max Flow value : ',max_flow)
+			print('\n')
 
 			# Start list of max flows
 			Max_Flows = list()
