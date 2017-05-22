@@ -390,15 +390,16 @@ def DeltaCost(K,new_k_edge,new_graph_edge,max_flow):
 	#
 	u,v,c,t = new_graph_edge
 	print('new G edge : ',u,v)
-	R.add_edge(u,v)
-	#R.add_edge(v,u)
-	R[u][v]['capacity'] = c
-	#R[v][u]['capacity'] = 0.0
-	R[u][v]['flow'] = 0.0
-	#R[v][u]['flow'] = 0.0
-	R[u][v]['res_cap'] = R[u][v]['capacity'] - R[u][v]['flow']
-	#R[v][u]['res_cap'] = R[v][u]['capacity'] - R[v][u]['flow']	
-	R[u][v]['tabu'] = t
+	#R.add_edge(u,v)
+	if (u,v) in R.edges():
+		R[u][v]['capacity'] = R[u][v]['capacity'] + c
+		R[u][v]['res_cap'] = R[u][v]['capacity'] - R[u][v]['flow']
+		R[u][v]['tabu'] = t
+	else:	
+		R[u][v]['capacity'] = c
+		R[u][v]['flow'] = 0.0
+		R[u][v]['res_cap'] = R[u][v]['capacity'] - R[u][v]['flow']
+		R[u][v]['tabu'] = t
 	
 	#for x,y in R.edges():
 	#	print(x,y,R[x][y])
