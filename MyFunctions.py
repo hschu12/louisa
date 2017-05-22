@@ -362,7 +362,7 @@ def DeltaCost(K,new_k_edge,new_graph_edge,max_flow):
 					alpha_sent_t = alpha_sent_t + flow_value
 					print('alpha_sent from t : ', alpha_sent_t)
 				print('alpha: ', alpha, ', alpha_sent_t: ', alpha_sent_t)
-				if us_route == False:
+				if tv_route == False:
 					sys.exit(1)
 	print('\n')
 	
