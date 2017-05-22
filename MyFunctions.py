@@ -347,6 +347,8 @@ def DeltaCost(K,new_k_edge,new_graph_edge,max_flow):
 					print('alpha_sent to s : ', alpha_sent_s)
 					print('\n')
 				print('alpha: ', alpha, ', alpha_sent_s: ', alpha_sent_s)
+				if us_route == False:
+					sys.exit(1)
 			# From t to v
 			if v == 't':
 				alpha_sent_t = alpha
@@ -360,7 +362,8 @@ def DeltaCost(K,new_k_edge,new_graph_edge,max_flow):
 					alpha_sent_t = alpha_sent_t + flow_value
 					print('alpha_sent from t : ', alpha_sent_t)
 				print('alpha: ', alpha, ', alpha_sent_t: ', alpha_sent_t)
-	
+				if us_route == False:
+					sys.exit(1)
 	print('\n')
 	
 	delta_time = time.time() - delta_start_time
