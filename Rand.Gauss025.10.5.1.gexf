@@ -1,0 +1,323 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf version="1.1" xmlns="http://www.gexf.net/1.1draft" xmlns:viz="http://www.gexf.net/1.1draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance">
+  <graph defaultedgetype="directed" mode="static">
+    <attributes class="edge" mode="static">
+      <attribute id="0" title="capacity" type="double" />
+      <attribute id="1" title="tabu" type="long" />
+    </attributes>
+    <nodes>
+      <node id="2" label="2" />
+      <node id="3" label="3" />
+      <node id="4" label="4" />
+      <node id="5" label="5" />
+      <node id="6" label="6" />
+      <node id="7" label="7" />
+      <node id="8" label="8" />
+      <node id="9" label="9" />
+      <node id="s" label="s" />
+      <node id="t" label="t" />
+    </nodes>
+    <edges>
+      <edge id="0" source="2" target="t">
+        <attvalues>
+          <attvalue for="0" value="0.5195192796077267" />
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="1" source="2" target="6">
+        <attvalues>
+          <attvalue for="0" value="0.6262820855540411" />
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="2" source="2" target="7">
+        <attvalues>
+          <attvalue for="0" value="0.6962560977541082" />
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="3" source="3" target="t">
+        <attvalues>
+          <attvalue for="0" value="0.4221687576039266" />
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="4" source="3" target="4">
+        <attvalues>
+          <attvalue for="0" value="1.0111724879205264" />
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="5" source="3" target="5">
+        <attvalues>
+          <attvalue for="0" value="0.42359406105030484" />
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="6" source="3" target="6">
+        <attvalues>
+          <attvalue for="0" value="-0.08711375270632016" />
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="7" source="3" target="7">
+        <attvalues>
+          <attvalue for="0" value="0.12929026280372646" />
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="8" source="3" target="8">
+        <attvalues>
+          <attvalue for="0" value="0.839350781902471" />
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="9" source="4" target="2">
+        <attvalues>
+          <attvalue for="0" value="0.45765033299842295" />
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="10" source="4" target="3">
+        <attvalues>
+          <attvalue for="0" value="0.06341365709647284" />
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="11" source="4" target="5">
+        <attvalues>
+          <attvalue for="0" value="0.08580863776333308" />
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="12" source="4" target="t">
+        <attvalues>
+          <attvalue for="0" value="0.5498591651964119" />
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="13" source="4" target="7">
+        <attvalues>
+          <attvalue for="0" value="0.3406489919421082" />
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="14" source="4" target="8">
+        <attvalues>
+          <attvalue for="0" value="0.37488797942130525" />
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="15" source="4" target="9">
+        <attvalues>
+          <attvalue for="0" value="0.37755134221008424" />
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="16" source="5" target="2">
+        <attvalues>
+          <attvalue for="0" value="0.8240437706742609" />
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="17" source="5" target="3">
+        <attvalues>
+          <attvalue for="0" value="0.2601505938532294" />
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="18" source="5" target="4">
+        <attvalues>
+          <attvalue for="0" value="0.8912463025166546" />
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="19" source="5" target="t">
+        <attvalues>
+          <attvalue for="0" value="0.6268981427907956" />
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="20" source="5" target="7">
+        <attvalues>
+          <attvalue for="0" value="0.6614488656692542" />
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="21" source="5" target="9">
+        <attvalues>
+          <attvalue for="0" value="0.24569196110214175" />
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="22" source="6" target="2">
+        <attvalues>
+          <attvalue for="0" value="0.27565911867234344" />
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="23" source="6" target="3">
+        <attvalues>
+          <attvalue for="0" value="0.4181998388369068" />
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="24" source="6" target="4">
+        <attvalues>
+          <attvalue for="0" value="0.9135655633965811" />
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="25" source="6" target="5">
+        <attvalues>
+          <attvalue for="0" value="1.0219491550391924" />
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="26" source="6" target="t">
+        <attvalues>
+          <attvalue for="0" value="0.9044768883322962" />
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="27" source="6" target="9">
+        <attvalues>
+          <attvalue for="0" value="0.2599284801786961" />
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="28" source="7" target="3">
+        <attvalues>
+          <attvalue for="0" value="0.9649958181127919" />
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="29" source="7" target="t">
+        <attvalues>
+          <attvalue for="0" value="0.43694631125757244" />
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="30" source="7" target="6">
+        <attvalues>
+          <attvalue for="0" value="0.3017918912666818" />
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="31" source="8" target="2">
+        <attvalues>
+          <attvalue for="0" value="0.2473593705618412" />
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="32" source="8" target="3">
+        <attvalues>
+          <attvalue for="0" value="0.696047592216311" />
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="33" source="8" target="4">
+        <attvalues>
+          <attvalue for="0" value="0.29403779383686246" />
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="34" source="8" target="5">
+        <attvalues>
+          <attvalue for="0" value="0.9101967164877303" />
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="35" source="8" target="6">
+        <attvalues>
+          <attvalue for="0" value="0.17609005414986162" />
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="36" source="8" target="t">
+        <attvalues>
+          <attvalue for="0" value="0.7395480487605122" />
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="37" source="9" target="2">
+        <attvalues>
+          <attvalue for="0" value="0.411685060129726" />
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="38" source="9" target="4">
+        <attvalues>
+          <attvalue for="0" value="0.1306040851713282" />
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="39" source="9" target="t">
+        <attvalues>
+          <attvalue for="0" value="0.7246094548381135" />
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="40" source="9" target="7">
+        <attvalues>
+          <attvalue for="0" value="0.6466823111142146" />
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="41" source="9" target="8">
+        <attvalues>
+          <attvalue for="0" value="0.7538146319032033" />
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="42" source="s" target="2">
+        <attvalues>
+          <attvalue for="0" value="0.44845024399078354" />
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="43" source="s" target="3">
+        <attvalues>
+          <attvalue for="0" value="0.810869887126136" />
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="44" source="s" target="4">
+        <attvalues>
+          <attvalue for="0" value="0.28917542945579844" />
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="45" source="s" target="5">
+        <attvalues>
+          <attvalue for="0" value="0.33815368626063724" />
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="46" source="s" target="6">
+        <attvalues>
+          <attvalue for="0" value="0.33233757432101724" />
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="47" source="s" target="t">
+        <attvalues>
+          <attvalue for="0" value="0.44401722922028597" />
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="48" source="s" target="8">
+        <attvalues>
+          <attvalue for="0" value="0.8669485254987603" />
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="49" source="s" target="9">
+        <attvalues>
+          <attvalue for="0" value="-0.012644266822602557" />
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>
