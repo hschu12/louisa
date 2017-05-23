@@ -295,7 +295,7 @@ def main(path,time_limit,constr_heuristic,flip_fct,step_fct):
 						#print('G suggestion : ', u,v,G[u][v]['capacity'],G[u][v]['tabu'])
 						# Test if edge can be used
 						if G[u][v]['tabu'] == 0:
-							#new_k_edge = (u,v,G[u][v]['capacity'],G[u][v]['tabu'])
+							new_k_edge = (u,v,G[u][v]['capacity'],G[u][v]['tabu'])
 							G_flip = True
 							# Update tabu attributes for the edges in G
 							# (Updating tabu attribute for new_k_edge happens after deltacost-calculation)
