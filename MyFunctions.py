@@ -226,6 +226,7 @@ def DeltaCost(K,new_k_edge,new_graph_edge,max_flow):
 	R = copy.deepcopy(K)
 	u,v,c,t = new_k_edge
 	print('u,v', u, ':', v)
+	print(R[u])
 	new_k_edge_value = R[u][v]['flow']
 	print('new k edge value : ',new_k_edge_value)
 
