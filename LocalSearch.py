@@ -327,10 +327,10 @@ def main(path,time_limit,constr_heuristic,flip_fct,step_fct):
 							k_tabu_counter = k_tabu_counter + 1
 
 
-					#print('FLIP SUGGESTION :')
-					#print("New graph edge : ", new_graph_edge)
-					#print("New k edge : ", new_k_edge)
-					#print('\n')
+					print('FLIP SUGGESTION :')
+					print("New graph edge : ", new_graph_edge)
+					print("New k edge : ", new_k_edge)
+					print('\n')
 
 
 
