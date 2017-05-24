@@ -292,7 +292,7 @@ def main(path,time_limit,constr_heuristic,flip_fct,step_fct):
 					# As long as no flip suggestion from G is found
 					while G_flip == False:	
 						# Choose a random edge in G
-						while true: 
+						while True: 
 							u,v = random.choice(G.edges())
 							if (v,u) in R.edges():
 								break
