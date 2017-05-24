@@ -294,7 +294,7 @@ def main(path,time_limit,constr_heuristic,flip_fct,step_fct):
 						# Choose a random edge in G
 						while True: 
 							u,v = random.choice(G.edges())
-							print('u: ', u, ',' ,v, ' Does it exist?')
+							print('e: ', v, ',' ,u, ' Does it exist?')
 							if (v,u) in R.edges():
 								break
 						#print('G suggestion : ', u,v,G[u][v]['capacity'],G[u][v]['tabu'])
