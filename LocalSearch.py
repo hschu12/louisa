@@ -235,7 +235,7 @@ def main(path,time_limit,constr_heuristic,flip_fct,step_fct):
 			# or a max flow of zero is not found
 			while time_passed < time_limit and best_max_flow != 0:
 				
-
+				print('current k_set: ' , k_set)
 
 				#
 				# FLIP FUNCTION
