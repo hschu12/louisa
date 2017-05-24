@@ -292,7 +292,10 @@ def main(path,time_limit,constr_heuristic,flip_fct,step_fct):
 					# As long as no flip suggestion from G is found
 					while G_flip == False:	
 						# Choose a random edge in G
-						u,v = random.choice(G.edges())
+						while true: 
+							u,v = random.choice(G.edges())
+							if (v,u) in R.edges():
+								break
 						#print('G suggestion : ', u,v,G[u][v]['capacity'],G[u][v]['tabu'])
 						# Test if edge can be used
 						if G[u][v]['tabu'] == 0:
