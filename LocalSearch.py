@@ -195,7 +195,7 @@ def main(path,time_limit,constr_heuristic,flip_fct,step_fct):
 				# Removing excess edges from R added by networkx.edmonds_karp's construction of R
 				if R[u][v]['capacity'] == 0 and R[u][v]['flow'] == 0:
 					print('removing edge: ' , u, ', ' , v, ' With flow: ' , R[u][v]['flow'], ' and cap: ', R[u][v]['capacity'] )
-#					R.remove_edge(u,v)
+					R.remove_edge(u,v)
 			#print('\n')
 
 			# Set time
