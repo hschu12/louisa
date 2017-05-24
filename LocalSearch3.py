@@ -410,6 +410,7 @@ def main(path,time_limit,constr_heuristic,flip_fct,step_fct):
 					x,y,cap,tab = new_graph_edge
 					u,v,c,t = new_k_edge
 					G.add_edge(x,y, capacity = cap, tabu = G_tabu)
+					R[x][y]['tabu'] = G_tabu
 					k_set.append((u,v,c,k_tabu))
 					G.remove_edge(u,v)
 					k_set.remove((x,y,cap,tab))
@@ -533,4 +534,4 @@ def main(path,time_limit,constr_heuristic,flip_fct,step_fct):
 	return ms,k_list,edge_connectivity_list,init_max_flows,best_max_flows,first_int_max_flows,best_search_max_flows,step_list,flips_list,non_imp_flips_list,k_tabu_counter_list,G_tabu_counter_list,Max_Flows_list
 
 
-#main(sys.argv[1],float(sys.argv[2]),sys.argv[3],sys.argv[4],sys.argv[5])
+main(sys.argv[1],float(sys.argv[2]),sys.argv[3],sys.argv[4],sys.argv[5])
