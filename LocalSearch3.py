@@ -294,14 +294,16 @@ def main(path,time_limit,constr_heuristic,flip_fct,step_fct):
 						#print('G suggestion : ', u,v,G[u][v]['capacity'],G[u][v]['tabu'])
 						# Test if edge can be used
 						if G[u][v]['tabu'] == 0:
-							new_k_edge = (u,v,G[u][v]['capacity'],G[u][v]['tabu'])
+							new_k_edge_tabu = G[u][v]['tabu']
+							new_k_edge = (u,v,G[u][v]['capacity'],new_k_edge_tabu)
 							G_flip = True
 							# Update tabu attributes for the edges in G (and in R)
 							# (Updating tabu attribute for new_k_edge happens after deltacost-calculation)
 							for x,y in G.edges():
 								if G[x][y]['tabu'] > 0:
 									G[x][y]['tabu'] = G[x][y]['tabu'] - 1
-									R[x][y]['tabu'] = R[x][y]['tabu'] - 1		
+									R[x][y]['tabu'] = G[x][y]['tabu'] - 1
+							R[u][v]['tabu'] = new_k_edge_tabu		
 						else:
 							G_tabu_counter = G_tabu_counter + 1
 							
@@ -534,4 +536,4 @@ def main(path,time_limit,constr_heuristic,flip_fct,step_fct):
 	return ms,k_list,edge_connectivity_list,init_max_flows,best_max_flows,first_int_max_flows,best_search_max_flows,step_list,flips_list,non_imp_flips_list,k_tabu_counter_list,G_tabu_counter_list,Max_Flows_list
 
 
-main(sys.argv[1],float(sys.argv[2]),sys.argv[3],sys.argv[4],sys.argv[5])
+#main(sys.argv[1],float(sys.argv[2]),sys.argv[3],sys.argv[4],sys.argv[5])
